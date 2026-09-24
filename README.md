@@ -76,14 +76,10 @@ lewat `context.watch`/`context.read`.
 | 11 | Pencarian + filter digabung | Ketik kata kunci sekaligus pilih kategori dan status | Hasil hanya aktivitas yang cocok dengan ketiga kriteria sekaligus | Sesuai Ekspektasi | Berhasil |
 | 12 | Tandai favorit dari beberapa layar | Tandai favorit di Daftar Aktivitas dan Favorit | Status favorit dan jumlah favorit konsisten di semua layar | Status favorit dan jumlah favorit ada di Daftar Aktivitas dan Favorit | Berhasil |
 
-## Checklist paket pengumpulan
+## Paket pengumpulan
 
-- [ ] Source Flutter (folder `lib/` + `pubspec.yaml`) beserta README ini
-- [ ] Video 4–6 menit: demo tambah, edit, batal, hapus, filter, favorit
-- [ ] Tabel 12 skenario uji di atas, kolom Hasil Aktual & Status sudah
-      diisi
-- [ ] Screenshot minimal 6 layar (Beranda, Daftar Aktivitas, Detail,
-      Tambah/Edit, Favorit, Profil)
-- [ ] Screenshot minimal 3 kondisi error/kosong, contoh: validasi judul
-      kosong, hasil pencarian tidak ditemukan, layar Favorit saat belum
-      ada favorit
+- Source Flutter (folder `lib/` + `pubspec.yaml`) beserta README ini
+- Video 4–6 menit: demo tambah, edit, batal, hapus, filter, favorit
+- Tabel 12 skenario uji di atas, kolom Hasil Aktual & Status sudah diisi
+- Screenshot minimal 6 layar (Beranda, Daftar Aktivitas, Detail, Tambah/Edit, Favorit, Profil)
+- Screenshot minimal 3 kondisi error/kosong, contoh: validasi judul kosong, hasil pencarian tidak ditemukan, layar Favorit saat belum ada favorit
