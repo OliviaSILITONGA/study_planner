@@ -3,39 +3,18 @@
 Aplikasi pencatat aktivitas belajar pribadi. Dibuat dengan Flutter +
 Provider, sesuai ketentuan Bagian III (Tugas & Target UTS).
 
-## Cara integrasi ke project
+## Buat Project Flutter Baru
 
-1. Buat project Flutter baru (kalau belum ada):
+1. Buat project Flutter baru:
    ```
    flutter create study_planner
    cd study_planner
    ```
-2. Copy semua isi folder `lib/` dari paket ini, **timpa** `lib/` project
-   kamu (termasuk `main.dart`).
-3. Tambahkan dependency `provider` di `pubspec.yaml`, di bawah
-   `dependencies:`:
-   ```yaml
-   dependencies:
-     flutter:
-       sdk: flutter
-     cupertino_icons: ^1.0.8
-     provider: ^6.1.2
-   ```
-4. Jalankan:
+2. Jalankan:
    ```
    flutter pub get
    flutter run
    ```
-
-## Daftar versi package
-
-Isi bagian ini sesuai hasil `flutter --version` dan `flutter pub deps`
-di laptop kamu setelah `flutter pub get`:
-
-- Flutter: (isi versi, contoh: 3.47.2, channel stable)
-- Dart: (isi versi, contoh: 3.13.2)
-- provider: ^6.1.2
-- cupertino_icons: ^1.0.8
 
 ## Struktur layar (6 layar sesuai ketentuan)
 
@@ -80,11 +59,11 @@ Pola yang sama berlaku untuk tambah, edit, hapus, dan tandai selesai —
 semua mutasi lewat method di `ActivityProvider`, semua layar membaca
 lewat `context.watch`/`context.read`.
 
-## 12 Skenario uji (isi kolom Hasil Aktual & Status setelah kamu coba sendiri)
+## 12 Skenario uji
 
 | No | Skenario | Input | Ekspektasi | Hasil Aktual | Status |
 |----|----------|-------|------------|---------------|--------|
-| 1 | Tambah aktivitas valid | Judul "Belajar Flutter", kategori Tugas, deskripsi diisi, deadline dipilih | Aktivitas baru muncul di Daftar Aktivitas dan Beranda | | |
+| 1 | Tambah aktivitas valid | Judul "Belajar Flutter", kategori Tugas, deskripsi diisi, deadline dipilih | Aktivitas baru muncul di Daftar Aktivitas | | |
 | 2 | Tambah aktivitas judul kosong | Judul dikosongkan, tekan Tambah | Muncul pesan error "Judul wajib diisi", data tidak tersimpan | | |
 | 3 | Tambah aktivitas judul terlalu pendek | Judul "ab" | Muncul pesan error "Judul minimal 3 karakter" | | |
 | 4 | Batal saat tambah | Isi form lalu tekan Batal | Kembali ke Daftar Aktivitas, tidak ada aktivitas baru ditambahkan | | |
